@@ -24,7 +24,7 @@ namespace WindowsFormsApp1
             {
                 btn = new Button();
                 btn.DialogResult = DialogResult.OK;
-                btn.Name = string.Format("btb_{0}", i + 1);
+                btn.Name = string.Format("btn_{0}", i + 1);
                 btn.Text = string.Format("확인:{0}", i + 1);
                 btn.Size = new Size(100, 50);
                 btn.Location = new Point(30+(100*i), 30);
@@ -40,8 +40,7 @@ namespace WindowsFormsApp1
             
             foreach(Control ct in Controls)
             {
-                if(ct.Name!= "btn_3") ct.BackColor = Color.Blue;
-
+                if(ct.Name != "btn_3") ct.BackColor = Color.Blue;
             }
             btn = (Button)o;
             if(btn.BackColor == Color.Green) btn.BackColor = Color.Silver;
